@@ -1,0 +1,74 @@
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+:root {
+
+    /* Background & Colors */
+    --background-color: #2E424F;
+    --background-accent: #457BAF;
+    --background-line-color: #11181C;
+    --top-color:#FFFFFF50;
+    --bottom-color:#3A587C;
+    --accent-contrast: #2F527C;
+    
+    
+    /* Menu */
+    --item-gap:50px;
+    --line-size: 20px; /* The divider line width*/
+
+    /* Icon Styling */
+    --default-border: 3px solid #FFFFFF50;
+
+    --default-top-border: 3px solid #FFFFFF50;
+    --default-bottom-border: 3px solid #1A1A1A;
+    --default-button-background:#395264;
+    --default-outline:5px solid #11181C;
+    
+    --gold-top-border: 3px solid #F0EBBF;
+    --gold-bottom-border: 3px solid #BC721B;
+    --gold-button-background:#FECC5C;
+    --gold-icon-color:#5D380D;
+
+    --red-top-border: 3px solid #FFFFFF50;
+    --red-bottom-border: 3px solid #FF4343;
+    --red-button-background: #FF8686;
+    --red-icon-color: #B61E1E;
+
+    --green-top-border:3px solid #FFFFFF50;
+    --green-bottom-border:3px solid #1BA944;
+    --green-button-background:#A2FDBC;
+    --green-icon-color:#075F20;
+
+    --blue-top-border:3px solid #FFFFFF50;
+    --blue-bottom-border:3px solid #18DFDF;
+    --blue-button-background:#A3EEFF;
+    --blue-icon-color:#52B4B4;
+
+    --purple-top-border:3px solid #FFFFFF50;
+    --purple-bottom-border:3px solid #8214F1;
+    --purple-button-background:#EA69FF;
+    --purple-icon-color:#6B00F0;
+
+    /* Typography */
+    --xs-text: 0.75rem;
+    --small-text: 1rem;
+    --medium-text:1.5rem;
+    --big-text:2rem;
+    --huge-text:3rem;
+    
+
+    /* Borders */
+    --round-corners: 18px;
+    --round-squared-corners:8px;
+
+    --panel-top-border: 6px solid #FFFFFF50;
+    --panel-bottom-border: 6px solid #1A1A1A;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}

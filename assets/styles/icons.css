@@ -1,0 +1,84 @@
+.icon {
+    height: 50px;
+    aspect-ratio:1;
+    transition: all 0.2s cubic-bezier(0.68, 0.6, 0.265, 1.55);
+}
+
+
+.icon svg {
+    width:50px;
+    height: 30px;
+}
+
+.round-icon {
+    border-radius: var(--round-corners);
+}
+
+.round-square-icon {
+    border-radius: var(--round-squared-corners);
+}
+
+.default-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--default-top-border);
+    border-bottom: var(--default-bottom-border);
+    outline: var(--default-outline);
+    outline-offset: 0px;
+}
+
+.gold-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gold-button-background);
+    border-bottom: var(--gold-bottom-border);
+    outline: var(--default-outline);
+    border-top: var(--gold-top-border);
+}
+
+.purple-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-button-background);
+    border-bottom: var(--purple-bottom-border);
+    outline: var(--default-outline);
+    border-top: var(--purple-top-border);
+}
+
+.green-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-button-background);
+    border-bottom: var(--green-bottom-border);
+    outline: var(--default-outline);
+    border-top: var(--green-top-border);
+}
+
+.blue-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue-button-background);
+    border-bottom: var(--blue-bottom-border);
+    outline: var(--default-outline);
+    border-top: var(--blue-top-border);
+}
+
+.red-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red-button-background);
+    border-bottom: var(--red-bottom-border);
+    outline: var(--default-outline);
+    border-top: var(--red-top-border);
+}
+
+.icon:hover, .icon.active {
+    scale:1.25;
+    filter:brightness(1.25);
+}

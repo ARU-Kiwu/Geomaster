@@ -1,0 +1,347 @@
+/*#########################*/
+/*       Main Screen       */
+/*#########################*/
+
+#mainScreen {
+    display: flex;
+    height: 100vh;
+    background: var(--background-color);
+}
+
+#leftSection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:60%;
+}
+
+#rightSection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width:40%;
+}
+
+.tapArea {
+    flex:1 1 auto;
+    background-image: url('/assets/UI/background-image.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1500px) {
+     .tapArea{
+        background-position-y: -250px;
+     }
+    }
+
+/*Left Section Header */ 
+.ls-header {
+    padding:15px;
+    display: flex;
+    
+}
+
+.displays {
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    flex:1 1 auto;
+}
+
+.menu-icons {
+    display: flex;
+    gap:20px;
+}
+/*===============*/
+
+.coinDisplay, .geodeDisplay {
+    --height-value:50px;
+    height: var(--height-value);
+    background-color: var(--background-color);
+    width: 250px;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: var(--medium-text);
+    font-weight: 700;
+    padding: 0 20px;
+    border-radius: var(--round-corners);
+}
+
+.coinDisplay div:first-of-type, .geodeDisplay div:first-of-type {
+    flex:1 1 auto;
+}
+
+.coinDisplay .coin-icon, .geodeDisplay .geode-icon {
+    left:50px;
+    border-radius: 0 var(--round-squared-corners) var(--round-squared-corners) 0;
+    outline-offset: 0px;
+    position: relative;
+    height: var(--height-value);
+    aspect-ratio: 1;
+}
+
+
+/* Footer Section*/
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:var(--item-gap);
+}
+
+/* Dividers */
+.divider {
+    border-top:3px solid var(--background-line-color);
+    border-bottom:3px solid var(--background-line-color);
+    border-left:3px solid var(--background-line-color);
+    border-right:3px solid var(--background-line-color);
+    background: var(--background-accent);
+}
+
+.divider-x {
+    height: var(--line-size);
+    border-left: none;
+    border-right: none;
+}
+
+.divider-y {
+    width: var(--line-size);
+    border-top:none;
+    border-bottom:none;
+}
+
+
+/* Panels */
+
+.panel-header {
+    position: relative;
+    background-color: var(--background-accent);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 125px;
+    border-bottom: var(--panel-bottom-border);
+    border-top: var(--panel-top-border);
+    width: 100%;
+    font-size: var(--huge-text);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black;
+}
+
+.inventory-panel {
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#close-icon {
+    scale:0.75;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    right:20px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#close-icon:hover {
+    rotate: 90deg;
+    scale: 1.1;
+}
+
+.inventory-item {
+    height: 125px;
+    width: 97%;
+    background-color: var(--background-accent);
+    border: 5px solid #11181C; /* Border Color */
+    margin:10px auto;
+    display: flex;
+    box-shadow: inset 3px 3px var(--top-color), inset -3px -3px var(--bottom-color);
+}
+
+.item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    aspect-ratio: 1;
+    border-right: 5px solid #11181C;
+    box-shadow: inset -3px 0 var(--bottom-color);
+}
+
+.info-wrapper {
+    display: flex;
+    padding:15px;
+    width: 100%;
+}
+
+.info-wrapper .iw-left-section {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap:10px;
+}
+
+
+.info-wrapper .iw-right-section {
+    flex:1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap:10px;
+}
+
+.name {
+    color: white;
+    font-size: var(--big-text);
+    font-weight: 700;
+    text-shadow: 2px 2px black, -2px -2px black, 2px -2px black, -2px 2px black;
+}
+
+
+
+.quantity {
+    background-color: var(--accent-contrast);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px 20px;
+    border-radius: 3px;
+    color:white;
+    font-size: var(--medium-text);
+    width:max-content;
+}
+
+.price {
+    background-color: var(--accent-contrast);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3px 20px;
+    border-radius: 3px;
+    color:white;
+    font-size: var(--medium-text);
+    width:max-content;
+    gap:10px;
+}
+
+.price div {
+    display: flex;
+    justify-content: center;
+}
+
+.sell-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.sell-button div {
+    font-size: var(--xs-text);
+    color: var(--red-icon-color);
+    font-weight: 700;
+    border-radius: 3px;
+    padding: 10px;
+    height: 35px;
+    aspect-ratio: 1;
+    outline-width: 3px;
+    transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.sell-button div:hover {
+    scale: 1.12;
+}
+
+@media only screen and (max-width: 1350px) {
+   .inventory-item {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+   }
+
+   .info-wrapper {
+    gap:10px;
+   }
+
+   .item-icon {
+    border-right:none;
+    height:200px;
+   }
+
+   .iw-left-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .iw-right-section {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+}
+
+.tap {
+    display: flex;
+    flex:1 1 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tap img {
+    transition: all 0.1s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.tap img:hover {
+    scale:1.25;
+}
+
+@media only screen and (max-width: 1000px) {
+    .ls-header{
+        .menu-icons{
+            flex-direction: column;
+        }
+    }
+    .divider-y {
+        display: none;
+    }
+    .footer {
+        position: fixed;
+    }
+
+    #rightSection {
+        display: none;
+    }
+
+    #leftSection {
+        width: 100%;
+    }
+   }
+
+   @media only screen and (max-width: 360px) {
+        .coinDisplay {
+            width: 200px;
+        }
+
+        .geodeDisplay {
+            width: 200px;
+        }
+   }
+
+ 
