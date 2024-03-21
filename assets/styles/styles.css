@@ -302,14 +302,68 @@ footer {
     flex:1 1 auto;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
+.tap section {
+ margin-bottom: 30px;
+}
 
-.tap img {
+.tap > div:not(.health-bar) {
+    position: relative;
+    background-image: url(/assets/UI/stone-item.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 25vh;
+    aspect-ratio: 1;
     transition: all 0.1s cubic-bezier(0.23, 1, 0.320, 1);
 }
-.tap img:hover {
-    scale:1.25;
+
+.tap > div:hover:not(.health-bar) {
+    scale: 1.25;
+}
+
+.health-bar {
+    transition: all 0.2s cubic-bezier(.46,2.01,.18,.29);
+    width: 40%;
+    height: 15px;
+    margin:0px auto 50px auto;
+    border-radius: var(--round-squared-corners);
+    border-bottom: none !important;
+    background: linear-gradient(90deg, var(--green-button-background) 0%, var(--green-button-background) var(--heath-bar-progress),red var(--heath-bar-progress), red 100%);;
+}
+
+.health-bar.shake {
+    transform: var(--animation);
+}
+
+.currentClickValue {
+    user-select: none;
+    pointer-events: none;
+    display: none;
+    z-index: 99;
+    position:absolute;
+    color: white;
+    font-size: var(--small-text);
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.currentClickValue.clickValueAnimation {
+    position: absolute;
+    display: block;
+    animation: click-value-animation 1s ease-in-out;
+}
+
+@keyframes click-value-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
 }
 
 @media only screen and (max-width: 1000px) {

@@ -1,20 +1,9 @@
 
 const items = {
-    stone : {
+    0: {
         source : '',
+        health : 30,
         itemName: 'Stone',
-        itemValue: 1 ,
-        itemQuantity: 'stoneQuantity'
     }
-}
-
-const clicks = { 
-    0: clickCounter
-}
-
-
-
-function addClick() {
-    clickCounter++
 }
 
