@@ -373,11 +373,7 @@ footer {
    }
 
 @media only screen and (max-width: 375px) {
-        .coinDisplay {
-            width: 200px;
-        }
-
-        .geodeDisplay {
+        .coinDisplay, .geodeDisplay, .cpsDisplay {
             width: 200px;
         }
 
@@ -426,6 +422,12 @@ footer {
  @media only screen and (min-width: 1500px) {
     .tapArea{
        background-position-y: -250px;
+    }
+   }
+
+   @media only screen and (max-width: 500px) {
+    :root {
+        --item-gap: 20px !important;
     }
    }
 
