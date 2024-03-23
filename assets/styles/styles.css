@@ -24,7 +24,7 @@
 
 .tapArea {
     flex:1 1 auto;
-    background-image: url('/assets/UI/background/background-image.jpeg');
+    background-image: url('../UI/background/background-image.jpeg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -275,9 +275,9 @@ footer {
 }
 
 .tap > div:not(.health-bar) {
-    cursor: url(/assets/UI/cursors/default-pickaxe.png), auto;
+    cursor: url('../UI/cursors/default-pickaxe.png'), auto;
     position: relative;
-    background-image: url(/assets/UI/items/stone-item.png);
+    background-image: url('../UI/items/stone-item.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

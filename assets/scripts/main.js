@@ -4,7 +4,7 @@
 
 const items = {
     0: {
-        source : '/assets/UI/items/stone-item.png',
+        source : './assets/UI/items/stone-item.png',
         health : 10,
         itemName: 'Stone',
         sellValue: 1,
@@ -12,12 +12,12 @@ const items = {
         quantity: 0,
         quantityValueId: 'stone-quantity',
         rewards: {
-            source: '/assets/UI/items/rewards/raw-iron.png',
+            source: './assets/UI/items/rewards/raw-iron.png',
             alt: 'An image of a raw iron chunk',
         }
     },
     1: {
-        source : '/assets/UI/items/copper-item.png',
+        source : './assets/UI/items/copper-item.png',
         health : 20,
         itemName: 'Raw Copper',
         sellValue: 5,
@@ -25,12 +25,12 @@ const items = {
         quantity: 0,
         quantityValueId: 'copper-quantity',
         rewards: {
-            source: '/assets/UI/items/rewards/raw-iron.png',
+            source: './assets/UI/items/rewards/raw-iron.png',
             alt: 'An image of a raw copper chunk',
         }
     },
     2: {
-        source : '/assets/UI/items/iron-item.png',
+        source : './assets/UI/items/iron-item.png',
         health : 50,
         itemName: 'Raw Iron',
         sellValue: 10,
@@ -38,12 +38,12 @@ const items = {
         quantity: 0,
         quantityValueId: 'iron-quantity',
         rewards: {
-            source: '/assets/UI/items/rewards/raw-iron.png',
+            source: './assets/UI/items/rewards/raw-iron.png',
             alt: 'An image of a raw iron chunk',
         }
     },
     3: {
-        source : '/assets/UI/items/quartz-item.png',
+        source : './assets/UI/items/quartz-item.png',
         health : 100,
         itemName: 'Quartz',
         sellValue: 20,
@@ -51,7 +51,7 @@ const items = {
         quantity: 0,
         quantityValueId: 'quartz-quantity',
         rewards: {
-            source: '/assets/UI/items/rewards/raw-iron.png',
+            source: './assets/UI/items/rewards/raw-iron.png',
             alt: 'An image of a raw iron chunk',
         }
     }
